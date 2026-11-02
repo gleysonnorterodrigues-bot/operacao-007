@@ -1,0 +1,26 @@
+OPERAÇÃO 007 — PROTÓTIPO ANDROID
+
+Este é o primeiro protótipo de um jogo ORIGINAL de espionagem em primeira pessoa.
+Não contém arquivos, mapas, músicas, personagens ou código extraídos de GoldenEye 007.
+
+O que já existe:
+- cenário 3D simples de treinamento;
+- jogador em primeira pessoa;
+- movimentação e câmera;
+- inimigos básicos que perseguem o jogador;
+- disparo por mira central e munição limitada;
+- HUD e botões básicos de toque.
+
+IMPORTANTE:
+Este pacote é o projeto-fonte, ainda não é o APK instalável.
+A exportação Android depende de configurar corretamente os templates/exportação Android no ambiente de compilação.
+Depois de enviar estes arquivos ao GitHub, vamos configurar o fluxo de compilação e baixar o APK gerado em Actions > Artifacts.
+
+PRÓXIMO PASSO PELO CELULAR:
+1. Abra seu repositório GitHub operacao-007.
+2. Toque em Add file > Upload files.
+3. Envie todos os arquivos e pastas deste ZIP (mantenha a pasta .github).
+4. Faça Commit changes.
+5. Avise aqui quando terminar.
+
+Projeto feito para Godot 4.3, renderizador Compatibility.
