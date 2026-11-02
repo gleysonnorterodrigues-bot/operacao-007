@@ -1,0 +1,38 @@
+
+name: Gerar APK Android
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - principal
+      - main
+
+jobs:
+  build:
+    name: Compilar Operação 007
+    runs-on: ubuntu-latest
+
+    container:
+      image: barichello/godot-ci:4.3.0
+
+    steps:
+      - name: Baixar arquivos do projeto
+        uses: actions/checkout@v4
+
+      - name: Verificar projeto
+        run: |
+          echo "Verificando arquivos..."
+          ls -la
+          test -f project.godot
+
+      - name: Gerar APK
+        run: |
+          godot --headless --editor --path . --quit
+          godot --headless --path . --export-debug "Android" operacao-007.apk
+
+      - name: Disponibilizar APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Operacao-007-Android
+          path: operacao-007.apk
